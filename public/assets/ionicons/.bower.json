@@ -1,0 +1,14 @@
+{
+  "name": "ionicons",
+  "homepage": "https://github.com/ionic-team/ionicons",
+  "version": "4.5.8",
+  "_release": "4.5.8",
+  "_resolution": {
+    "type": "version",
+    "tag": "v4.5.8",
+    "commit": "c7d5b078e839833243f1fb4aef42cdfd8c06d607"
+  },
+  "_source": "https://github.com/ionic-team/ionicons.git",
+  "_target": "^4.5.8",
+  "_originalSource": "https://github.com/ionic-team/ionicons.git"
+}
