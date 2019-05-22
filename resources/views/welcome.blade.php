@@ -297,7 +297,8 @@
             <h3>Get In Touch</h3>
         </div>
         <div class="col-sm-8 mx-auto connect">
-            <form action="#" class="needs-validation" novalidate>
+            <form class="needs-validation" action="{{ url('/message/send') }}" method="POST" route="send_mail" novalidate>
+            {{ csrf_field() }}    
                 <div class="form-inline ">
                     <div class="name-holder col-sm-6">
                         <input type="text" class="form-control" name="name" id="name" required />
@@ -306,14 +307,14 @@
                         <div class="invalid-feedback">Please fill out this field.</div>
                     </div>
                     <div class="email-holder col-sm-6">
-                        <input type="text" class="form-control" name="name" id="name" required />
+                        <input type="text" class="form-control" name="mail" id="mail" required />
                         <div class="placeholder">Email <span class="text-danger">*</span></div>
                         <div class="valid-feedback">Valid.</div>
                         <div class="invalid-feedback">Please fill out this field.</div>
                     </div>
                 </div>
                 <div class="form-group message-holder">
-                    <input type="text" class="form-control" placeholder="Message" name="message" id="message" />
+                    <input type="textarea" class="form-control" placeholder="Message" name="message" id="message" />
                 </div>
                 <div class="d-flex justify-content-center"><button type="submit" class="send-message">SEND MESSAGE</button></div>
             </form>

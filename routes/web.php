@@ -18,6 +18,7 @@ Route::get('/', 'NewController@index')->name('new');
 Route::resource('new', 'NewController')->middleware('auth');
 
 Auth::routes();
+Auth::routes(['register' => false]);
 
 Route::get('/home', 'HomeController@index')->name('home');
 
@@ -26,3 +27,5 @@ Route::resource('comment', 'CommentController')->middleware('auth');
 Route::get('/chart', function () {
     return view('gantt');
 })->name('chart')->middleware('auth');
+
+Route::post('/message/send', ['uses' => 'FrontController@addFeedback', 'as' => 'send_mail']);

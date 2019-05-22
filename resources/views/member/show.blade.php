@@ -61,8 +61,8 @@
                             </ul>
 
                             <!-- Button edit profile -->
-                            <a href="{{ route('member.edit', ['id' => $user->id]) }}" class="btn btn-primary btn-block {{ Auth::user()->id == $user->id ? "" : "disabled"}} " id="edit-profile" >
-                                <span class="fa fa-pencil-square-o"></span> <b>Edit profile</b>
+                            <a href="{{ route('member.edit', ['id' => $user->id]) }}" class="btn btn-primary btn-block {{ Auth::user()->id == $user->id ? "" : "disabled"}} " id="edit-profile">
+                                <i class="far fa-edit"></i> <b>Edit profile</b>
                             </a>
                         </div>
                     </div>
