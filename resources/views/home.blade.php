@@ -32,7 +32,7 @@
                 <div class="box-header with-border">
                     <h3>All Members</h3>
                     <div>
-                        <a href="" class="btn btn-success">
+                        <a href="{{ route('member.create') }}" class="btn btn-success">
                             <i class="fa fa-plus"></i> New Member
                         </a>
                     </div>

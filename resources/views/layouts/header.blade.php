@@ -2,7 +2,7 @@
     <!-- Logo -->
     {!! html_entity_decode(
         Html::linkRoute(
-            'home', 
+            'new', 
             '<span class="logo-mini"><b>' . Lang::get("custom.common.logo") . 
             '</b></span><span class="logo-lg"><b>' . Lang::get('custom.common.title') . '</b></span>', 
             null, 
@@ -29,9 +29,7 @@
 
         <div class="navbar-custom-menu">
             <ul class="nav navbar-nav">
-                <li class="trang chu" style="padding-right: 20px;">
-                    <a href="{{ url('/') }}">Trang chủ</a>
-                </li>
+                
                 <!-- User Account: style can be found in dropdown.less -->
                 <li class="dropdown user user-menu" style="padding-right: 20px;">
                     {!! html_entity_decode(

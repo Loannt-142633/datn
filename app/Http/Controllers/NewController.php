@@ -121,7 +121,7 @@ class NewController extends Controller
                 $new->hinh = $filename;
                 $new->save();
 
-                return redirect()->route('new')->with(['msg' => 'Edit post successfull']);
+                return redirect()->route('new.show',['id' => $id])->with(['msg' => 'Edit post successfull']);
         }
     }
 

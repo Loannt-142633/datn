@@ -95,12 +95,25 @@ class MemberController extends Controller
         } else {
             $filename = $user->avatar;
         }
+
+        if ($_POST['password'] && $_POST['password_confirmation']) {
+            if ($_POST['password'] == $_POST['password_confirmation']) {
+                $new_password = bcrypt($_POST['password']);
+            } else {
+                return redirect()->back()->with(['status' => 'Confirm password incorrectly']);
+            }
+            
+        } else {
+            $new_password = $user->password;
+        }
+
         $user->name = $request->name;
         $user->phone = $request->phone;
         $user->school = $request->school;
         $user->organization = $request->organization;
         $user->course = $request->course;
         $user->avatar = $filename;
+        $user->password = $new_password;
         $user->save();
         return redirect()->route('member.show', ['id' => $id])->with(['msg' => 'Update profile successfull']);
     }

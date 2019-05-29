@@ -22,7 +22,8 @@
 			    </div>
 			    <div class="form-group">
 			        <label for="noidung">Nội dung</label>
-			        <input type="text" class="form-control" id="noidung" placeholder="Enter a content" name="noidung">
+			        
+			        <textarea name="noidung" rows="10"  class="form-control" id="noidung" placeholder="Enter a content"></textarea>
 			    </div>
 			    <div class="form-group">
 			        <label for="hinh">Chọn Ảnh</label>

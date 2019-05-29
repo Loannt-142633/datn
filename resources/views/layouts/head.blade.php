@@ -15,7 +15,7 @@
 {{ Html::script('owlcarousel/jquery.min.js') }}
 {{ Html::script('owlcarousel/owl.carousel.min.js') }}
 <!-- less -->
-{{ Html::style('css/style.less') }}
+<!-- {{ Html::style('css/style.less') }} -->
 {{ Html::script('assets/less/dist/less.min.js') }}
 <!-- ionicons -->
 {{ Html::style('assets/ionicons/docs/css/ionicons.min.css') }}

@@ -15,7 +15,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/', 'NewController@index')->name('new');
-Route::resource('new', 'NewController')->middleware('auth');
+Route::resource('new', 'NewController');
+Route::get('new.edit','NewController@edit')->middleware('auth');
+Route::get('new.create','NewController@create')->middleware('auth');
 
 Auth::routes();
 Auth::routes(['register' => false]);

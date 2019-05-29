@@ -109,7 +109,7 @@
                 
                 <hr>
                 <!-- Date/Time -->
-                <p>Posted on .{{ $new->created_at->toDayDateTimeString() }}</p>
+                <p>Posted on .{{ $new->updated_at->toDayDateTimeString() }}</p>
                 <hr>
                 <!-- Preview Image -->
                 {!! html_entity_decode(
@@ -144,7 +144,9 @@
                             <div class="form-group">
                                 <textarea class="form-control" rows="3" name="comment"></textarea>
                             </div>
+                            @if (Auth::check())
                             <button type="submit" class="btn" style="background-color: green; color: white;" name="cmtbtn">Thêm bình luận</button>
+                            @endif
                         </form>
                     </div>
                 </div>

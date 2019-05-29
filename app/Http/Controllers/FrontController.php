@@ -13,7 +13,6 @@ class FrontController extends Controller
 	        $message->to('nguyentloan13954@gmail.com', 'WiComLab')->subject('Visitor Feedback!')->from($_POST['mail'], 'Visitor');
 	    });
         Session::flash('flash_message', 'Send message successfully!');
-
         return redirect()->route('new')->with(['msg' => 'Add new post successfull']);
     }
 }

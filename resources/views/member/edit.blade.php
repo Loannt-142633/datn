@@ -228,6 +228,31 @@
                                     </div>
                                 </div>
                                 <div class="form-group row">
+                                    {!! Form::label('name', 'password', ['class' => 'col-md-12']) !!}
+                                    <div class="col-md-12">
+                                        {!! Form::password('password', ['class' => 'form-control form-control-line', 'placeholder' => 'password']) !!}
+                                        @if($errors->first('password'))
+                                            <p class="text-danger">
+                                                <strong>{{ $errors->first('password') }}</strong>
+                                            </p>
+                                        @endif
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    {!! Form::label('password_confirmation', 'confirm password', ['class' => 'col-md-12']) !!}
+                                    <div class="col-md-12">
+                                        {!! Form::password('password_confirmation', ['class' => 'form-control form-control-line', 'placeholder' => 'confirm password']) !!}
+                                        @if($errors->first('confirm_password'))
+                                            <p class="text-danger">
+                                                <strong>{{ $errors->first('confirm_password') }}</strong>
+                                            </p>
+                                        @endif
+                                    </div>
+                                </div>
+                                @if (session('status'))
+                                    <div class="alert alert-danger ">{{session('status')}}</div>
+                                @endif
+                                <div class="form-group row">
                                     <div class="col-md-9 col-md-offset-3">
                                         {!! Form::submit(
                                             Lang::get('custom.common.edit'),

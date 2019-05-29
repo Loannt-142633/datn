@@ -18,7 +18,15 @@
         </div>
 
         <ul class="sidebar-menu" data-widget="tree">
-            <li>
+            <li class="sidebar-item">
+                {!! html_entity_decode(
+                    Html::linkRoute(
+                        'home', 
+                        '<i class="fas fa-home"></i> <span>' .  'HOME' . '</span>'
+                    )
+                ) !!}
+            </li>
+            <li class="sidebar-item">
                 {!! html_entity_decode(
                     Html::linkRoute(
                         'member.index', 
@@ -26,7 +34,7 @@
                     )
                 ) !!}
             </li>
-            <li>
+            <li class="sidebar-item">
                 {!! html_entity_decode(
                     Html::linkRoute(
                         'chart', 

@@ -23,7 +23,8 @@
 			    </div>
 			    <div class="form-group">
 			        <label for="noidung">Nội dung</label>
-			        <input type="text" class="form-control" id="noidung" placeholder="Enter a content" name="noidung" value ="{{ old('noidung') ? old('noidung') : $new->noidung }}">
+			        
+                    <textarea name="noidung" rows="10"  class="form-control" id="noidung" placeholder="Enter a content">{{ old('noidung') ? old('noidung') : $new->noidung }}</textarea>
 			    </div>
 		        {!! Html::image(
                     config('custom.path_hinh') . $new['hinh'],

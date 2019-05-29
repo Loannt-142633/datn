@@ -9,6 +9,10 @@
  * Core: General Layout Style
  * -------------------------
  */
+@font-face {
+  font-family: "Montserrat Regular";
+  src: url("../fonts/Monserrat-Regular.otf"), url("../fonts/Montserrat-Regular.ttf");
+}
 html,
 body {
   height: 100%;
@@ -18,7 +22,7 @@ body {
   height: 100%;
 }
 body {
-  font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Montserrat Regular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 400;
   overflow-x: hidden;
   overflow-y: auto;
