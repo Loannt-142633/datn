@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\User;
+use App\Task;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Input as Input;
 use File;

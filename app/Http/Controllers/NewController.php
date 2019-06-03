@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Input as Input;
 use Illuminate\Support\Facades\DB;
+use PhpOffice\PhpWord\IOFactory;
 use Auth;
 use App\News;
 use App\Comment;
@@ -50,6 +51,7 @@ class NewController extends Controller
         $new->tieude = $request->tieude;
         $new->tomtat = $request->tomtat;
         $new->noidung = $request->noidung;
+        
         $new->hinh = $filename;
         $new->save();
 

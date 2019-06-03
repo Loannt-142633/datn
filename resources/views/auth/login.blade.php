@@ -82,7 +82,9 @@
                     
                 {!! Form::close() !!}
 
-                {!! Html::link(null, Lang::get('custom.admin_login.forgot_password')) !!}
+                <a class="btn btn-link forgot-password" href="{{ route('password.request') }}">
+		            i forgot my password :(
+		        </a>
 
             </div>
             <!-- /.login-box-body -->

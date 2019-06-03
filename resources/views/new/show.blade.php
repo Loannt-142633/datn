@@ -15,7 +15,10 @@
     {{ Html::script('owlcarousel/jquery.min.js') }}
     {{ Html::script('owlcarousel/owl.carousel.min.js') }}
     <link rel="stylesheet/less" type="text/css" href="../css/style.less" />
-    {{ Html::script('../assets/less/dist/less.min.js') }}
+    {{ Html::script('assets/less/dist/less.min.js') }}
+    <link href="../ckeditor/plugins/codesnippet/lib/highlight/styles/monokai_sublime.css" rel="stylesheet">
+    <script src="../ckeditor/plugins/codesnippet/lib/highlight/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
 </head>
 
 <body>
@@ -128,11 +131,47 @@
                     )
                 ) !!}
                 <hr>
+                @if (Auth::check() && (Auth::user()->level==0))
+                    {!! html_entity_decode(
+                        Html::linkRoute(
+                        'new.edit',
+                        '<i class="far fa-edit"></i>',
+                        [
+                            'id' => $new->id,
+                        ],
+                        [
+                            'class' => 'edit-new',
+                        ]
+                        )
+                    )
+                    !!}
+                    {!! Form::open([
+                        'route' => ['new.destroy', $new->id],
+                        'method' => 'DELETE',
+                        'id' => 'delete-form-' . $new->id,
+                        'style' => 'display: none;',
+                    ]) !!}
+
+                    {!! Form::close() !!}
+
+                    {!! html_entity_decode(
+                        Html::link(
+                            null,
+                            '<i class="far fa-trash-alt"></i>',
+                            [
+                                'class' => 'edit-new delete-new',
+                                'data-id' => $new->id,
+                            ]
+                        )
+                    ) !!}
+                @endif
+                <br/>
+                <hr/>
                 <!-- Post Content -->
                 <p class="lead">{{ $new->tomtat }}</p>
                 
-                <p>{{ $new->noidung }}</p>
-                
+                <p>{!! $new->noidung !!}</p>
+
                 <hr>
                 <!-- Comments Form -->
                 <div class="card my-4">
