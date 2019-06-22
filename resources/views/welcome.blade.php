@@ -209,7 +209,73 @@
         </div>
         <div class="container field">
             <div class="row">
-
+                <div class="col-sm col-md-6 field-item">
+                    <div class="field-img col-2 float-left p-0">
+                        <img class="img-fluid" src="images/wif.png" />
+                    </div>
+                    <div class="field-des col-10 float-left">
+                        <h3>Under Water</h3>
+                        <p>Nhóm truyền thông dưới nước</p>
+                        <p><strong>Software</strong>: Nghiên cứu các thuật toán xử lý tín hiệu và thiết kế các phần mềm thu phát tín hiệu thông tin thủy âm</p>
+                        <p><b>Hardware</b>:Nghiên cứu và thiết kế các mạch thu phát tín hiệu và mạch lọc: LNA, PA, LBF, BWF, HBF...</p>
+                    </div>
+                </div>
+                <div class="col-sm col-md-6 field-item">
+                    <div class="field-img col-2 float-left p-0">
+                        <img class="img-fluid" src="images/sonar.png" />
+                    </div>
+                    <div class="field-des col-10 float-left">
+                        <h3>Sonar</h3>
+                        <p>Nhóm định vị dùng công nghệ sóng âm dưới nước</p>
+                        <p><strong>Software</strong>: Nghiên cứu các thuật toán xử lý tín hiệu và thiết kế phần mềm thu phát, hiển thị giám sát định vị vật thể ở dưới nước</p>
+                        <p><b>Hardware</b>:Nghiên cứu và thiết kế các mạch thu phát tín hiệu và mạch lọc: LNA, PA, LBF, BWF, HBF...</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm col-md-6 field-item">
+                    <div class="field-img col-2 float-left p-0">
+                        <img class="img-fluid" src="images/aa.png" />
+                    </div>
+                    <div class="field-des col-10 float-left">
+                        <h3>FPGA</h3>
+                        <p>Nhóm thiết kế IC số</p>
+                        <p>Nghiên cứu và thiết kế các IC số sử dụng ngôn ngữ bậc cao Verilog/VHDL trên nền tảng công nghệ FPGA</p>
+                        <p>Nghiên cứu và ứng dụng các thuật toán xử lý số tín hiệu để tích hợp vào IC số</p>
+                    </div>
+                </div>
+                <div class="col-sm col-md-6 field-item">
+                    <div class="field-img col-2 float-left p-0">
+                        <img class="img-fluid" src="images/web.png" />
+                    </div>
+                    <div class="field-des col-10 float-left">
+                        <h3>Web/Software</h3>
+                        <p>Nhóm web và phần mềm</p>
+                        <p>Thiết kế các phần mềm quản lý dự án, quản lý hệ thống phục vụ cho quản lý nhân sự và các dự án của lab</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm col-md-6 field-item">
+                    <div class="field-img col-2 float-left p-0">
+                        <img class="img-fluid" src="images/ai.png" />
+                    </div>
+                    <div class="field-des col-10 float-left">
+                        <h3>AI</h3>
+                        <p>Nhóm trí tuệ nhân tạo</p>
+                        <p>Nghiên cứu các thuật toán xử lý ảnh, nhận diện khuôn mặt, nhận diện cử chỉ, hành động...</p>
+                    </div>
+                </div>
+                <div class="col-sm col-md-6 field-item">
+                    <div class="field-img col-2 float-left p-0">
+                        <img class="img-fluid" src="images/5g.png" />
+                    </div>
+                    <div class="field-des col-10 float-left">
+                        <h3>5G</h3>
+                        <p>Nhóm mạng di động thế hệ mới</p>
+                        <p>Nghiên cứu các thuật toán xử lý và tối ưu thông tin trong các mạng di động thế hệ mới...</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -281,7 +347,7 @@
         </div>
     </div>
     <div class="container-fluid map">
-        <div style="overflow:hidden;width: 100%;position: relative;"><iframe width="100%" height="500" src="https://maps.google.com/maps?width=100%&amp;height=500&amp;hl=en&amp;q=toa%20nha%20C9%2C%20DH%20Bach%20Khoa%20Ha%20Noi%2C%20so%2017%20Giai%20Phong%2C%20Ha%20Noi%2C%20Viet%20Nam+(Title)&amp;ie=UTF8&amp;t=&amp;z=10&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+        <div style="overflow:hidden;width: 100%;position: relative;"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.6697908921133!2d105.83971411451368!3d21.005869686010776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac7798a10a8f%3A0xc2c16f09fd52ff14!2zQzksIELDoWNoIEtob2EsIEhhaSBCw6AgVHLGsG5nLCBIw6AgTuG7mWksIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1559792826726!5m2!1svi!2s" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
             <div style="position: absolute;width: 80%;bottom: 10px;left: 0;right: 0;margin-left: auto;margin-right: auto;color: #000;text-align: center;"><small style="line-height: 1.8;font-size: 2px;background: #fff;">Powered by <a href="https://embedgooglemaps.com/es/">Embedgooglemaps.com/es/</a> & <a href="https://brightononline.ca/">custommappostercom</a></small></div>
             <style>
                 #gmap_canvas img {

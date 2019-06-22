@@ -18,7 +18,7 @@
 <body>
 	<h1 class="text-center">Edit Post</h1>
     <div class="row col-md-12 centered d-flex justify-content-center">
-		<div class="container">
+		<div class="container pb-5">
 			<form method='POST' action="{{route('new.update',[$new->id])}}" enctype="multipart/form-data">
 				{{ csrf_field() }}
                 {{ method_field('PUT') }}
@@ -32,7 +32,7 @@
 			    </div>
 			    <div class="form-group">
 			        <label for="noidung">Nội dung</label>
-			        <textarea name="noidung" id="editor1" rows="10"  class="form-control" >{{ old('noidung') ? old('noidung') : $new->noidung }}</textarea>
+			        <textarea name="noidung" id="editor1" rows="15"  class="form-control" >{{ old('noidung') ? old('noidung') : $new->noidung }}</textarea>
 			    </div>
 		        {!! Html::image(
                     config('custom.path_hinh') . $new['hinh'],

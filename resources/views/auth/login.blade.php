@@ -83,7 +83,7 @@
                 {!! Form::close() !!}
 
                 <a class="btn btn-link forgot-password" href="{{ route('password.request') }}">
-		            i forgot my password :(
+		            i forgot my password
 		        </a>
 
             </div>

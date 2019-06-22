@@ -23,6 +23,57 @@
   font-family: "Montserrat Regular";
   src: url("../fonts/Monserrat-Regular.otf"), url("../fonts/Montserrat-Regular.ttf");
 }
+.edit-new {
+  font-family: Montserrat Medium;
+  font-size: 15px;
+  color: #ffffff;
+  padding: 10px 15px;
+  background: #006600;
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .edit-new {
+    font-size: 10px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .edit-new {
+    font-size: 12px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1023px) {
+  .edit-new {
+    font-size: 12px;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+  .edit-new {
+    font-size: 12px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .edit-new {
+    font-size: 12px;
+  }
+}
+.edit-new:hover {
+  text-decoration: none;
+  background: #008000;
+  color: #ffffff;
+}
+.chart {
+  height: 100%;
+  padding-top: 46px;
+}
+.chart .custom-scale {
+  margin-bottom: 10px;
+}
+.chart .custom-scale label {
+  margin: 0 15px;
+}
+.chat {
+  border-radius: 5px;
+  background: rgba(0, 102, 0, 0.2);
+}
 .text {
   font-family: Montserrat Regular;
   font-size: 16px;
@@ -90,6 +141,9 @@
 .header .header-menu .li-header-menu {
   list-style-type: none;
   float: left;
+}
+.content-detail {
+  padding-top: 50px;
 }
 .banner {
   background: url(../images/slider.jpg);
@@ -169,6 +223,9 @@
 .news .title1 h3 {
   font-family: Montserrat Bold;
   font-size: 40px;
+}
+.news .news-content {
+  position: relative;
 }
 .news .news-content .row {
   margin: -10px;
@@ -270,11 +327,64 @@
   text-decoration: none;
   background: #008000;
 }
+.news .news-content .pagi .pagination .page-item.active .page-link {
+  background: #006600;
+  border-color: #006600;
+  color: #ffffff;
+}
+.news .news-content .pagi .pagination .page-item .page-link {
+  color: #006600;
+  border-color: #006600;
+}
+.news .news-content .add-new-post {
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  top: -10%;
+}
+.news .news-content .add-new-post .read-new {
+  font-family: Montserrat Medium;
+  font-size: 15px;
+  color: #ffffff;
+  padding: 10px 15px;
+  background: #006600;
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .news .news-content .add-new-post .read-new {
+    font-size: 10px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .news .news-content .add-new-post .read-new {
+    font-size: 12px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1023px) {
+  .news .news-content .add-new-post .read-new {
+    font-size: 12px;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+  .news .news-content .add-new-post .read-new {
+    font-size: 12px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .news .news-content .add-new-post .read-new {
+    font-size: 12px;
+  }
+}
+.news .news-content .add-new-post .read-new:hover {
+  text-decoration: none;
+  background: #008000;
+}
 .research {
+  padding-top: 100px;
   margin-bottom: 100px;
 }
 .research .title1 {
   text-align: center;
+  margin-bottom: 100px;
 }
 .research .title1 p {
   font-family: Montserrat Medium;
@@ -284,6 +394,21 @@
 .research .title1 h3 {
   font-family: Montserrat Bold;
   font-size: 40px;
+}
+.research .field {
+  padding-bottom: 100px;
+}
+.research .field .field-item {
+  margin-bottom: 50px;
+}
+.research .field .field-item .field-des h3 {
+  font-family: Montserrat Medium;
+  font-size: 23px;
+}
+.research .field .field-item .field-des p {
+  font-family: Montserrat Light;
+  font-size: 15px;
+  margin-bottom: 0;
 }
 .language {
   margin-bottom: 100px;
