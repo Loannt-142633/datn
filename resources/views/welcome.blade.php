@@ -9,13 +9,13 @@
     <meta name="viewport" content="width=device-width; initial-scale=1.0" />
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    {{ Html::style('/assets/Font-Awesome/css/all.min.css') }}
-    {{ Html::style('/owlcarousel/assets/owl.carousel.min.css') }}
-    {{ Html::style('/owlcarousel/assets/owl.theme.default.min.css') }}
-    {{ Html::script('/owlcarousel/jquery.min.js') }}
-    {{ Html::script('/owlcarousel/owl.carousel.min.js') }}
+    {{ Html::style('../assets/Font-Awesome/css/all.min.css') }}
+    {{ Html::style('../owlcarousel/assets/owl.carousel.min.css') }}
+    {{ Html::style('../owlcarousel/assets/owl.theme.default.min.css') }}
+    {{ Html::script('../owlcarousel/jquery.min.js') }}
+    {{ Html::script('../owlcarousel/owl.carousel.min.js') }}
     <link rel="stylesheet/less" type="text/css" href="../css/style.less" />
-    {{ Html::script('/assets/less/dist/less.min.js') }}
+    {{ Html::script('../assets/less/dist/less.min.js') }}
 </head>
 
 <body>
