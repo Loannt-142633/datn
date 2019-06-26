@@ -98,7 +98,7 @@
         var holder;
         $.ajax({
             dataType: "json",
-            url: 'http://wicomlabvn.herokuapp.com/api/data?dhxr1556951249815=1',
+            url: 'https://wicomlabvn.herokuapp.com/api/data?dhxr1556951249815=1',
             // data: data,
             success: function (data) {
                 console.log('gg');
