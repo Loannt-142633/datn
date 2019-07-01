@@ -131,7 +131,7 @@
                             Html::linkRoute(
                                 'new.show',
                                 Html::image(
-                                    config('custom.path_hinh') .$new->hinh,
+                                    $new->hinh,
                                     'New Image',
                                     [
                                         'class' => 'img-fluid',
