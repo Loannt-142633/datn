@@ -17,6 +17,5 @@ class GanttController extends Controller
 			"links" => $links->all(),
 			"user" =>$users->all(),
 		]);
-		// return view('gantt');
 	}
 }
