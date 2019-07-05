@@ -245,6 +245,12 @@
     var end = new Date(today.getFullYear(), today.getMonth(), today.getDate() + 15);
     console.log(begin); 
     console.log(end);
+
+    var userLevel = {{ Auth::user()->level }};
+    if (userLevel!=0) {
+        gantt.config.readonly = true;
+    }
+    
     gantt.init("gantt_here");
     gantt.load('/api/data');
     
