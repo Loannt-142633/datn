@@ -8,6 +8,7 @@
 /public/assets/admin-lte/package-lock.json
 /storage/*.key
 /vendor
+composer.lock
 .env
 .phpunit.result.cache
 Homestead.json
