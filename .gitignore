@@ -1,9 +1,13 @@
 /node_modules
 /public/hot
 /public/storage
+/public/assets/bootstrap/package-lock.json
+/public/assets/animate.css/package-lock.json
+/public/assets/bootstrap-colorpicker/yarn.lock
+/public/assets/admin-lte/yarn.lock
+/public/assets/admin-lte/package-lock.json
 /storage/*.key
 /vendor
-/public/assets
 .env
 .phpunit.result.cache
 Homestead.json
